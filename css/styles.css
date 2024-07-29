@@ -26,6 +26,7 @@ img {
 
 .section {
   padding: 120px 0;
+  max-width: 1440px;
 }
 
 .container {
@@ -42,6 +43,7 @@ img {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  max-width: 1440px;
 }
 
 .header-container {
@@ -78,7 +80,18 @@ img {
   text-decoration: none;
   color: #404bbf;
   position: relative;
+  color: #404bbf;
+  height: 4px;
 }
+
+.menu-link::after {content: '';
+ width: 100%;
+ position: absolute;
+ left: 0;
+ bottom: -1px;
+ background-color: #404bbf;
+ border-radius: 2px;
+ transition:color: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .menu,
 .menu-item {
@@ -99,11 +112,7 @@ img {
   padding: 24px 0;
 }
 
-.menu-link:hover {
-  color: #404bbf;
-}
-
-.menu-link:focus {
+.menu-link:hover, :focus {
   color: #404bbf;
 }
 
@@ -122,14 +131,9 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition:color: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.adress-link:hover {
-  color: #404bbf;
-}
-
-.adress-link:focus {
+.adress-link:hover, :focus {
   color: #404bbf;
 }
 
@@ -175,14 +179,10 @@ img {
   display: block;
   cursor: pointer;
   margin: auto;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-button:hover {
-  background-color: #404bbf;
-}
-
-.order-button:focus {
+.order-button:hover, :focus {
   background-color: #404bbf;
 }
 
@@ -315,20 +315,22 @@ img {
 }
 
 .app-item{
-  transition: background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .app-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 
-.footer-section {
+.footer {
   background-color: #2e2f42;
   padding: 100px 0;
   display: flex;
   align-items: baseline;
+  max-width: 1440px;
 }
 
 .footer-span {
