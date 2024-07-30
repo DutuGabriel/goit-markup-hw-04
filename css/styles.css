@@ -44,14 +44,14 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.header::after {content: '';
+::after {content: '';
  width: 100%;
  position: absolute;
  left: 0;
  bottom: -1px;
  background-color: #404bbf;
  border-radius: 2px;
- transition:color: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+ transition:box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .header-container {
   display: flex;
@@ -72,7 +72,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: #404bbf;
   display: flex;
   margin-right: 76px;
   text-decoration: none;
@@ -81,13 +81,6 @@ img {
 .logo-span {
   color: #2e2f42;
   text-decoration: none;
-}
-
-.menu-link {
-  text-decoration: none;
-  color: #404bbf;
-  position: relative;
-  height: 4px;
 }
 
 .menu{
@@ -100,7 +93,10 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  text-decoration: none;
+  position: relative;
+  height: 4px;
+  color: #2e2f42;;
 }
 
 .menu-item,
@@ -127,7 +123,7 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
-  transition:color: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+  transition:box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .adress-link:hover, :focus {
   color: #404bbf;
@@ -176,7 +172,7 @@ img {
   display: block;
   cursor: pointer;
   margin: auto;
-  transition:color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover, :focus {
@@ -301,6 +297,24 @@ img {
   row-gap: 48px;
 }
 
+.overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-paragraph {position: absolute;
+top: 0;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+padding: 40px 32px;
+background-color: #4d5ae5;
+height: 100%;
+width: 100%;
+transform: translateY(100%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
 .app-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -312,7 +326,7 @@ img {
 }
 
 .app-item{
-  transition:color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -342,6 +356,8 @@ img {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+
+.social-media-container {margin-right: 120px;}
 
 .social-media-title {
 font-weight: 500;
