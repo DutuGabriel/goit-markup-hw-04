@@ -309,10 +309,6 @@ img {
   overflow: hidden;
 }
 
-.overlay-paragraph {
-  transform: translateY(100%);
-}
-
 .overlay-container .overlay-paragraph {
   height: 100%;
   width: 100%;
@@ -324,6 +320,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 40px 32px;
+}
+
+.overlay-container .overlay-paragraph {
   transform: translateY(100%);
 }
 
