@@ -44,18 +44,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  background-color: #404bbf;
-  border-radius: 2px;
-  height: 4px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .header-container {
   display: flex;
   align-items: center;
@@ -114,6 +102,17 @@ img {
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
+}
+
+.menu-item:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  height: 4px;
 }
 
 .address {
@@ -212,6 +211,8 @@ img {
 .strengths {
   display: flex;
   gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 .strength-title {
@@ -246,6 +247,8 @@ img {
 .team {
   display: flex;
   gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-item {
@@ -313,6 +316,8 @@ img {
 
 .apps {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
@@ -327,6 +332,8 @@ img {
   height: 100%;
   width: 100%;
   top: 0;
+  margin: 0;
+  max-width: 300px;
   background-color: #4d5ae5;
   color: #f4f4fd;
   font-size: 16px;
@@ -337,7 +344,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container .overlay-container .overlay-paragraph {
+.overlay-container .overlay-paragraph {
   transform: translateY(100%);
 }
 
@@ -389,6 +396,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.social-media-container {
+  margin-right: 120px;
 }
 
 .social-media-title {
