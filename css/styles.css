@@ -338,10 +338,10 @@ img {
   position: absolute;
   height: 100%;
   width: 100%;
-  width: 296px;
   top: 0;
   margin: 0;
   background-color: #4d5ae5;
+  box-sizing: border-box;
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
